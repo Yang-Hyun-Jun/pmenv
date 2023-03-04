@@ -52,6 +52,30 @@ action = np.random.random(size=(len(tickers)))
 next_observation, reward, done = environment.step(action)
 ```
 
+# Customizing
+```python
+# Yon can define your MDP
+import pmenv
+
+# Example 
+class CustomEnvironment(pmenv.Environment)
+	def __init__(self):
+		super().__init__()
+	
+	def get_state(self, observation):
+		"""
+		state is defined as [ohlcv, portfolio]
+		"""
+		portfolio = portfolio[:,np.newaxis]
+		state = np.concatenate([obsevation, portfolio], axis=1)
+		return state
+	
+	def get_reward(self):
+		"""
+		reward is defined as ~
+		"""
+```
+
 # Tutorial with RL 
 
  1. Portfolio Rebalancing with Deep Q-Learning
