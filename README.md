@@ -1,6 +1,6 @@
 # pmenv
 
-Introduction to the **pmenv** Package (made by Yang-Hyun-Jun)
+Introduction to the **pmenv** Package (made by *Yang-Hyun-Jun*)
 
 The pmenv is a reinforcement learning environment for the Portfolio Rebalancing Task. It loads multiple stock market data using tickers and synchronizes them into a 3D tensor format suitable for learning. It is an efficient environment for implementing and testing various reinforcement learning algorithms.
 
